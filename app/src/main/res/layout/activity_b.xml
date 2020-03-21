@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".ActivityB">
+
+    <TextView
+        android:id="@+id/dataFromMain_textView"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/data_from_main"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/colorText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/dataFromMain_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameIs_textView"
+                android:layout_width="148dp"
+                android:textColor="@color/colorText"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cityIs_textView"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorText"
+                android:text="@string/city"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ageIs_textView"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:text="@string/age"
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/receivedDataName_textView"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="21sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/receivedDataCity_textView"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/colorText"
+                android:textSize="21sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/receivedDataAge_textView"
+                android:layout_width="148dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/colorText"
+                android:textAlignment="center"
+                android:textSize="21sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:layout_constraintTop_toBottomOf="@id/containerLayout"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/comment_textView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/comment"
+            android:textStyle="italic"
+            android:textSize="21sp"
+            android:textColor="@color/colorText"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/commentButton"
+            android:layout_height="65dp"
+            android:layout_width="200dp"
+            android:layout_marginTop="50dp"
+            android:textSize="21sp"
+            android:textColor="@color/colorBackground"
+            android:background="@color/colorButton"
+            android:text="@string/send_to_main"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

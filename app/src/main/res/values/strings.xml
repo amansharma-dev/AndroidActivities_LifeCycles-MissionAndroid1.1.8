@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">AndroidActivities_LifeCycles-MissionAndroid1.1.8</string>
+    <string name="send_data">Send Data</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="send">Send</string>
+    <string name="data_from_main">Data From Main</string>
+    <string name="city_name">City Name</string>
+    <string name="name">Name:</string>
+    <string name="age">Age:</string>
+    <string name="city">City:</string>
+    <string name="enter_age">Enter Age</string>
+    <string name="comment">comment</string>
+    <string name="send_to_main">Send To Main</string>
+    <string name="reviews">Reviews From ActivityB: </string>
 </resources>
